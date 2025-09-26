@@ -17,7 +17,7 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 149, 120, 169), // لون الخلفية
+        backgroundColor: Color.fromARGB(255, 149, 120, 169), 
         toolbarHeight: 90,
         centerTitle: true,
         title: const Text(
@@ -1120,7 +1120,7 @@ class _HomepageState extends State<Homepage> {
     if (_currentPage < 2) {
       _currentPage++;
     } else {
-      _currentPage = 0; // لو وصلنا آخر صفحة ارجع للأولى
+      _currentPage = 0; 
     }
     _controller.animateToPage(
       _currentPage,
@@ -1133,7 +1133,7 @@ class _HomepageState extends State<Homepage> {
     if (_currentPage > 0) {
       _currentPage--;
     } else {
-      _currentPage = 2; // لو وصلنا أول صفحة ارجع لآخر صفحة
+      _currentPage = 2; 
     }
     _controller.animateToPage(
       _currentPage,
